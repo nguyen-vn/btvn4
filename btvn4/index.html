@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách Khóa Học</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .course-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .course-item:hover {
+            transform: scale(1.05);
+        }
+        .course-item img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+        }
+        .course-info {
+            padding: 15px;
+        }
+        .course-info h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: black;
+        }
+        .course-info p {
+            color: gray;
+            font-size: 0.9em;
+            margin-top: 8px;
+        }
+        .course-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .course-link:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Danh Sách Khóa Học</h1>
+        <div class="course-grid">
+            <div class="course-item">
+                
+                <div class="course-info">
+                    <h3>Foundation Basic</h3>
+                    <img src="./assets/img/MJjVUN4q.webp" alt="anh1">
+                    <p>Onlab</p>
+                    <a href="detail.html" class="course-link">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="course-item">
+                
+                <div class="course-info">
+                    <h3>Business Analyst</h3>
+                    <img src="./assets/img/NHis25UE.webp" alt="anh2">
+                    <p>Onlab</p>
+                    <a href="detail2.html" class="course-link">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="course-item">
+                
+                <div class="course-info">
+                    <h3>Luyện thi FE</h3>
+                    <img src="./assets/img/uhWHezPC.webp" alt="anh3">
+                    <p>Onlab</p>
+                    <a href="detail3.html" class="course-link">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
